@@ -7,10 +7,10 @@ import { AuthConfig, OAuthService, provideOAuthClient } from 'angular-oauth2-oid
 
 
 export const authCodeFlowConfig: AuthConfig ={
-  issuer: 'http://localhost:8080/realms/adjoda-dev-realm',
-  tokenEndpoint: 'http://localhost:8080/realms/adjoda-dev-realm/protocol/openid-connect/token',
+  issuer: 'https://cloak.srxone.dynu.net/realms/test-realm',
+  tokenEndpoint: 'https://cloak.srxone.dynu.net/realms/test-realm/protocol/openid-connect/token',
   redirectUri: window.location.origin,
-  clientId: 'adjoda-webapp',
+  clientId: 'test-client',
   responseType: 'code',
   scope: 'openid profile',
 }
